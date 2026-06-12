@@ -209,20 +209,32 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,eslint,playwright&theme=dark">
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,eslint,playwright&theme=light"
-       alt="Tools: Git, GitHub, GitHub Actions, Docker, ESLint, Playwright">
+          srcset="https://skillicons.dev/icons?i=git,github,githubactions&theme=dark">
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions&theme=light"
+       alt="Tools: Git, GitHub, GitHub Actions">
 </picture>
+
+<!-- skillicons に無いツールは shields.io バッジで補完 -->
+<br>
+<img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" alt="ESLint">
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
+<img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude Code">
 
 <!-- ─── Apps & Workspace ──────────────────────────────── -->
 <h4>Apps &amp; Workspace</h4>
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=vscode,cursor,warp,obsidian,notion,zotero&theme=dark">
-  <img src="https://skillicons.dev/icons?i=vscode,cursor,warp,obsidian,notion,zotero&theme=light"
-       alt="Apps: VS Code, Cursor, Warp, Obsidian, Notion, Zotero">
+          srcset="https://skillicons.dev/icons?i=vscode,obsidian,notion&theme=dark">
+  <img src="https://skillicons.dev/icons?i=vscode,obsidian,notion&theme=light"
+       alt="Apps: VS Code, Obsidian, Notion">
 </picture>
+
+<!-- skillicons に無いアプリは shields.io バッジで補完 -->
+<br>
+<img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor">
+<img src="https://img.shields.io/badge/Warp-01A4FF?style=flat-square&logo=warp&logoColor=white" alt="Warp">
+<img src="https://img.shields.io/badge/Zotero-CC2936?style=flat-square&logo=zotero&logoColor=white" alt="Zotero">
 
 </div>
 
