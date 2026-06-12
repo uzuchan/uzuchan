@@ -119,7 +119,7 @@ focus:       research × making
 </tr>
 
 <tr>
-<td width="50%" valign="top" align="center">
+<td colspan="2" valign="top" align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
@@ -137,26 +137,6 @@ focus:       research × making
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
 ![GLSL](https://img.shields.io/badge/GLSL-5586A4?style=flat-square)
 ![GPU Particles](https://img.shields.io/badge/GPU_Particles-000000?style=flat-square)
-
-</td>
-<td width="50%" valign="top" align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=nodejs-docker-ci-cd&hide_border=true&theme=tokyonight">
-  <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=nodejs-docker-ci-cd&hide_border=true&theme=default">
-  <img alt="nodejs-docker-ci-cd repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=nodejs-docker-ci-cd&hide_border=true">
-</picture>
-
-**nodejs-docker-ci-cd** — multi-stage Dockerfile + Docker Compose で PostgreSQL 連携の Node.js 環境を構成するテンプレート。
-
-[![Repo](https://img.shields.io/badge/Repo-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/uzuchan/nodejs-docker-ci-cd)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com)
-![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 
 </td>
 </tr>
@@ -181,9 +161,9 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=js,ts,html,css&theme=dark">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css&theme=light"
-       alt="Languages: JavaScript, TypeScript, HTML, CSS">
+          srcset="https://skillicons.dev/icons?i=js,ts,html,css,swift&theme=dark">
+  <img src="https://skillicons.dev/icons?i=js,ts,html,css,swift&theme=light"
+       alt="Languages: JavaScript, TypeScript, HTML, CSS, Swift">
 </picture>
 
 <!-- ─── Frameworks & Libraries ────────────────────────── -->
@@ -209,9 +189,9 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=git,github,githubactions&theme=dark">
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions&theme=light"
-       alt="Tools: Git, GitHub, GitHub Actions">
+          srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,figma&theme=dark">
+  <img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,figma&theme=light"
+       alt="Tools: Git, GitHub, GitHub Actions, Docker, Figma">
 </picture>
 
 <!-- skillicons に無いツールは shields.io バッジで補完 -->
@@ -225,9 +205,9 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=vscode,obsidian,notion&theme=dark">
-  <img src="https://skillicons.dev/icons?i=vscode,obsidian,notion&theme=light"
-       alt="Apps: VS Code, Obsidian, Notion">
+          srcset="https://skillicons.dev/icons?i=obsidian,notion,eclipse&theme=dark">
+  <img src="https://skillicons.dev/icons?i=obsidian,notion,eclipse&theme=light"
+       alt="Apps: Obsidian, Notion, Eclipse">
 </picture>
 
 <!-- skillicons に無いアプリは shields.io バッジで補完 -->
@@ -235,6 +215,10 @@ focus:       research × making
 <img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor">
 <img src="https://img.shields.io/badge/Warp-01A4FF?style=flat-square&logo=warp&logoColor=white" alt="Warp">
 <img src="https://img.shields.io/badge/Zotero-CC2936?style=flat-square&logo=zotero&logoColor=white" alt="Zotero">
+<img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=xcode&logoColor=white" alt="Xcode">
+<img src="https://img.shields.io/badge/Swift_Playgrounds-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift Playgrounds">
+<img src="https://img.shields.io/badge/Fitbit_OS_Simulator-00B0B9?style=flat-square&logo=fitbit&logoColor=white" alt="Fitbit OS Simulator">
+<img src="https://img.shields.io/badge/UTM-4A7EBF?style=flat-square" alt="UTM">
 
 </div>
 
