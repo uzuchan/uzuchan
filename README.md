@@ -14,6 +14,8 @@
       （「More Stats」折りたたみ内に配置。URL不変更）。
     - Metrics: .github/workflows/metrics.yml が metrics.svg を毎日自動更新
       （「More Stats」折りたたみ内に配置。URL不変更）。
+    - トロフィー: .github/workflows/trophies.yml が assets/trophies.svg を毎日自動生成
+      （プロフィール最上部に表示。外部サービス非依存）。
     - ヘッダー/フッターは assets/ 内の自作SVG（外部サービス非依存）。
     - typing SVG / 閲覧カウンタ / 各統計カードは外部サービスが自動描画。
 ==================================================================
@@ -23,6 +25,10 @@
 <div align="center">
 
 ![header](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/header.svg)
+
+<!-- ============ トロフィー（自前生成・assets/trophies.svg・毎日自動更新） ============ -->
+
+![uzuchan's trophies](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies.svg)
 
 <!-- ============ タイピングアニメーション（readme-typing-svg） ============ -->
 
@@ -257,14 +263,14 @@ focus:       research × making
 
 <!-- ============================================================= -->
 <!-- 5. More Stats（<details> 折りたたみ）                          -->
-<!--   Activity Graph → Snake → Trophy → Metrics の順               -->
+<!--   Activity Graph → Snake → Metrics の順                        -->
 <!--   ※ snake / metrics は自動更新URLをそのまま維持               -->
 <!-- ============================================================= -->
 
 ## More Stats
 
 <details>
-<summary>詳細な GitHub アクティビティを見る（Activity / Snake / Trophy / Metrics）</summary>
+<summary>詳細な GitHub アクティビティを見る（Activity / Snake / Metrics）</summary>
 
 <br>
 
@@ -284,14 +290,6 @@ focus:       research × making
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/output/github-contribution-grid-snake.svg">
   <img alt="uzuchan's contribution snake animation" src="https://raw.githubusercontent.com/uzuchan/uzuchan/output/github-contribution-grid-snake.svg">
-</picture>
-
-<!-- ============ トロフィー（github-profile-trophy） ============ -->
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=uzuchan&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-profile-trophy.vercel.app/?username=uzuchan&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8">
-  <img alt="uzuchan's trophies" src="https://github-profile-trophy.vercel.app/?username=uzuchan&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8">
 </picture>
 
 <!-- ============ メトリクスダッシュボード（lowlighter/metrics・毎日自動更新） ============ -->
