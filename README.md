@@ -14,14 +14,15 @@
       （「More Stats」折りたたみ内に配置。URL不変更）。
     - Metrics: .github/workflows/metrics.yml が metrics.svg を毎日自動更新
       （「More Stats」折りたたみ内に配置。URL不変更）。
-    - capsule-render / typing SVG / 閲覧カウンタ / 各統計カードは外部サービスが自動描画。
+    - ヘッダー/フッターは assets/ 内の自作SVG（外部サービス非依存）。
+    - typing SVG / 閲覧カウンタ / 各統計カードは外部サービスが自動描画。
 ==================================================================
 -->
 
-<!-- ============ ヘッダーバナー（capsule-render / waving） ============ -->
+<!-- ============ ヘッダーバナー（自作SVG・assets/header.svg） ============ -->
 <div align="center">
 
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=200&section=header&text=Welcome%20to%20uzuchan's%20Profile&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Student%20Developer%20%26%20NLP%20Researcher%20%7C%20Open%20to%20Work&descSize=18&descAlignY=58&animation=fadeIn)
+![header](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/header.svg)
 
 <!-- ============ タイピングアニメーション（readme-typing-svg） ============ -->
 
@@ -303,10 +304,10 @@ focus:       research × making
 
 <br>
 
-<!-- ============ フッターバナー（capsule-render / waving） ============ -->
+<!-- ============ フッターバナー（自作SVG・assets/footer.svg） ============ -->
 <div align="center">
 
-![footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=120&section=footer)
+![footer](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/footer.svg)
 
 <sub>Thanks for visiting! ご覧いただきありがとうございます。</sub>
 
