@@ -25,7 +25,7 @@
 
 <!-- ============ タイピングアニメーション（readme-typing-svg） ============ -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=6F8FF7&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+uzuchan+%F0%9F%91%8B;Student+Developer+from+Japan+%F0%9F%87%AF%F0%9F%87%B5;NLP+Researcher+%C3%97+Web+Developer;research+%C3%97+making;Building+with+React%2C+TypeScript+%26+Three.js;Open+to+work+%26+internships)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=6F8FF7&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+uzuchan;Student+Developer+from+Japan;NLP+Researcher+%C3%97+Web+Developer;research+%C3%97+making;Building+with+React%2C+TypeScript+%26+Three.js;Open+to+work+%26+internships)](https://git.io/typing-svg)
 
 <!-- ============ プロフィール閲覧カウンタ（komarev ghpvc） ============ -->
 
