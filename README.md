@@ -73,16 +73,16 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari.github.io&hide_border=true&theme=tokyonight">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&theme=tokyonight">
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari.github.io&hide_border=true&theme=default">
-  <img alt="hikari.github.io repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari.github.io&hide_border=true">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&theme=default">
+  <img alt="hikari repo card"
+    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true">
 </picture>
 
 **hikari** — 光・音・自然をテーマにした 27 作品のインタラクティブ試作集。Playwright で実ブラウザ検証。
 
-[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/hikari.github.io/)
+[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/hikari/)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)](https://threejs.org)
 ![Canvas 2D](https://img.shields.io/badge/Canvas_2D-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![Web Audio](https://img.shields.io/badge/Web_Audio_API-FF9900?style=flat-square&logo=javascript&logoColor=white)
@@ -93,16 +93,16 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing.github.io&hide_border=true&theme=tokyonight">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&theme=tokyonight">
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing.github.io&hide_border=true&theme=default">
-  <img alt="Sparta-Typing.github.io repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing.github.io&hide_border=true">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&theme=default">
+  <img alt="Sparta-Typing repo card"
+    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true">
 </picture>
 
 **Sparta-Typing** — 間隔反復法 × ローマ字判定で語彙定着を狙う英単語タイピング学習 SPA。
 
-[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/Sparta-Typing.github.io/)
+[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/Sparta-Typing/)
 [![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
@@ -116,16 +116,16 @@ focus:       research × making
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Karte.github.io&hide_border=true&theme=tokyonight">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&theme=tokyonight">
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Karte.github.io&hide_border=true&theme=default">
-  <img alt="Karte.github.io repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Karte.github.io&hide_border=true">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&theme=default">
+  <img alt="NEXUS repo card"
+    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true">
 </picture>
 
-**Karte (NEXUS)** — SF 世界観の没入型 Web 体験。GPU パーティクル × シネマティック演出。
+**NEXUS** — SF 世界観の没入型 Web 体験。GPU パーティクル × シネマティック演出。
 
-[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/Karte.github.io/)
+[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/NEXUS/)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)](https://threejs.org)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
 ![GLSL](https://img.shields.io/badge/GLSL-5586A4?style=flat-square)
