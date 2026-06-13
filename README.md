@@ -14,10 +14,13 @@
       （「More Stats」折りたたみ内に配置。URL不変更）。
     - Metrics: .github/workflows/metrics.yml が metrics.svg を毎日自動更新
       （「More Stats」折りたたみ内に配置。URL不変更）。
-    - トロフィー: .github/workflows/trophies.yml が assets/trophies.svg を毎日自動生成
-      （プロフィール最上部に表示。外部サービス非依存）。
-    - ヘッダー/フッターは assets/ 内の自作SVG（外部サービス非依存）。
-    - typing SVG / 閲覧カウンタ / 各統計カードは外部サービスが自動描画。
+    - トロフィー & 連続記録: .github/workflows/trophies.yml（Generate Stats）が
+      assets/trophies-*.svg と assets/streak.svg を実データから6時間ごとに自動生成
+      （外部サービス非依存。scripts/generate-trophies.mjs / generate-streak.mjs）。
+    - ヘッダー/フッター/スキルアイコンは assets/ 内の自前SVG（skilliconsの出力を取り込み
+      self-host。camoの壊れキャッシュ対策で外部依存なし）。
+    - typing SVG / 閲覧カウンタ / GitHub Statsカード（github-readme-stats）は外部サービス描画
+      （camoキャッシュのため反映に時差あり。自前生成分は上記のとおり定期更新）。
 ==================================================================
 -->
 
@@ -164,9 +167,8 @@ focus:       research × making
 <h4>Languages</h4>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=js,ts,html,css,swift&theme=dark">
-  <img src="https://skillicons.dev/icons?i=js,ts,html,css,swift&theme=light"
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-languages-dark.svg">
+  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-languages-light.svg"
        alt="Languages: JavaScript, TypeScript, HTML, CSS, Swift">
 </picture>
 
@@ -174,9 +176,8 @@ focus:       research × making
 <h4>Frameworks &amp; Libraries</h4>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=react,threejs,vite,nodejs&theme=dark">
-  <img src="https://skillicons.dev/icons?i=react,threejs,vite,nodejs&theme=light"
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-frameworks-dark.svg">
+  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-frameworks-light.svg"
        alt="Frameworks: React, Three.js, Vite, Node.js">
 </picture>
 
@@ -192,9 +193,8 @@ focus:       research × making
 <h4>Tools &amp; Infra</h4>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,figma&theme=dark">
-  <img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,figma&theme=light"
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-tools-dark.svg">
+  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-tools-light.svg"
        alt="Tools: Git, GitHub, GitHub Actions, Docker, Figma">
 </picture>
 
@@ -208,9 +208,8 @@ focus:       research × making
 <h4>Apps &amp; Workspace</h4>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://skillicons.dev/icons?i=obsidian,notion,eclipse&theme=dark">
-  <img src="https://skillicons.dev/icons?i=obsidian,notion,eclipse&theme=light"
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-apps-dark.svg">
+  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-apps-light.svg"
        alt="Apps: Obsidian, Notion, Eclipse">
 </picture>
 
@@ -249,13 +248,9 @@ focus:       research × making
   <img height="165" alt="uzuchan's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=uzuchan&layout=compact&langs_count=8&hide_border=true">
 </picture>
 
-<!-- ============ ストリーク（streak-stats） ============ -->
+<!-- ============ ストリーク（自前生成・assets/streak.svg・自動更新） ============ -->
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=uzuchan&hide_border=true&theme=tokyonight">
-  <source media="(prefers-color-scheme: light)" srcset="https://streak-stats.demolab.com/?user=uzuchan&hide_border=true&theme=default">
-  <img alt="uzuchan's streak stats" src="https://streak-stats.demolab.com/?user=uzuchan&hide_border=true">
-</picture>
+![uzuchan's streak](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/streak.svg)
 
 </div>
 
