@@ -14,13 +14,12 @@
       （「More Stats」折りたたみ内に配置。URL不変更）。
     - Metrics: .github/workflows/metrics.yml が metrics.svg を毎日自動更新
       （「More Stats」折りたたみ内に配置。URL不変更）。
-    - トロフィー & 連続記録: .github/workflows/trophies.yml（Generate Stats）が
-      assets/trophies-*.svg と assets/streak.svg を実データから6時間ごとに自動生成
-      （外部サービス非依存。scripts/generate-trophies.mjs / generate-streak.mjs）。
+    - 統計系（トロフィー / 連続記録 / GitHub Stats / 使用言語）: .github/workflows/trophies.yml
+      （Generate Stats）が assets/ 配下の各SVGを実データから6時間ごとに自動生成（外部サービス非依存。
+      scripts/generate-trophies.mjs / generate-streak.mjs / generate-stats.mjs）。
     - ヘッダー/フッター/スキルアイコンは assets/ 内の自前SVG（skilliconsの出力を取り込み
       self-host。camoの壊れキャッシュ対策で外部依存なし）。
-    - typing SVG / 閲覧カウンタ / GitHub Statsカード（github-readme-stats）は外部サービス描画
-      （camoキャッシュのため反映に時差あり。自前生成分は上記のとおり定期更新）。
+    - 残る外部サービス依存は typing SVG と閲覧カウンタのみ（campキャッシュのため反映に時差あり）。
 ==================================================================
 -->
 
@@ -236,17 +235,9 @@ focus:       research × making
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=uzuchan&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=tokyonight">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=uzuchan&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&theme=default">
-  <img height="165" alt="uzuchan's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=uzuchan&show_icons=true&include_all_commits=true&count_private=true&hide_border=true">
-</picture>
+<img height="165" alt="uzuchan's GitHub stats" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/stats.svg">
 &nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=uzuchan&layout=compact&langs_count=8&hide_border=true&theme=tokyonight">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=uzuchan&layout=compact&langs_count=8&hide_border=true&theme=default">
-  <img height="165" alt="uzuchan's top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=uzuchan&layout=compact&langs_count=8&hide_border=true">
-</picture>
+<img height="165" alt="uzuchan's top languages" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/top-langs.svg">
 
 <!-- ============ ストリーク（自前生成・assets/streak.svg・自動更新） ============ -->
 

@@ -26,11 +26,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_LOGIN: uzuchan
+      - name: Generate stats & top-langs SVG
+        run: node scripts/generate-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: uzuchan
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -q --ignore-unmatch assets/trophies.svg
-          git add assets/trophies-light.svg assets/trophies-dark.svg assets/streak.svg
+          git add assets/trophies-light.svg assets/trophies-dark.svg assets/streak.svg assets/stats.svg assets/top-langs.svg
           git diff --cached --quiet || git commit -m "Update stats - [Skip GitHub Action]"
           git push
