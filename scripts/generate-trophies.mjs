@@ -1,7 +1,10 @@
-// GitHub統計からトロフィーSVG（assets/trophies.svg）を生成する。
-// 外部サービス（github-profile-trophy等）に依存しないための自前実装。
-// 必要環境変数: GITHUB_TOKEN（読み取りのみ使用）、GH_LOGIN（対象ユーザー名）
-// 注: Commits は GitHub API の仕様上「直近1年間」のコントリビューション数。
+// GitHub統計からトロフィーSVGを生成する（ライト/ダーク両対応）。
+// 本家 github-profile-trophy (ryo-ma) のカード意匠を再現:
+//   上部にカテゴリ名 / 中央に円形プログレスリング＋ランク文字 / 下部にスコア / カードに影。
+// 公開インスタンスが停止中（DEPLOYMENT_DISABLED）のため自前生成する。
+// 必要環境変数: GITHUB_TOKEN（読み取りのみ）、GH_LOGIN（対象ユーザー名）
+// 出力: assets/trophies-light.svg, assets/trophies-dark.svg
+// 注: Commits は GitHub API 仕様上「直近1年間」のコントリビューション数。
 
 import { writeFileSync, mkdirSync } from "node:fs";
 
@@ -31,10 +34,7 @@ query($login: String!) {
 
 const res = await fetch("https://api.github.com/graphql", {
   method: "POST",
-  headers: {
-    Authorization: `bearer ${TOKEN}`,
-    "Content-Type": "application/json",
-  },
+  headers: { Authorization: `bearer ${TOKEN}`, "Content-Type": "application/json" },
   body: JSON.stringify({ query: QUERY, variables: { login: LOGIN } }),
 });
 const json = await res.json();
@@ -55,80 +55,95 @@ const stats = {
   issues: u.issues.totalCount,
 };
 
-// しきい値は [SSS, SS, S, AAA, AA, A, B] の順。下回れば C。
+// ランクのしきい値（降順）: [SSS, SS, S, AAA, AA, A, B]。下回れば C。
 const TIERS = ["SSS", "SS", "S", "AAA", "AA", "A", "B"];
-function rank(value, thresholds) {
-  for (let i = 0; i < thresholds.length; i++) {
-    if (value >= thresholds[i]) return TIERS[i];
+
+// value から「ランク」と「次ランクまでの進捗率(0..1)」を求める。
+function evaluate(value, thresholds) {
+  let i = thresholds.findIndex((t) => value >= t);
+  if (i === -1) {
+    // C ランク: 0 → B のしきい値までの進捗
+    const upper = thresholds[thresholds.length - 1];
+    return { rank: "C", progress: Math.min(value / upper, 1) };
   }
-  return "C";
+  const rank = TIERS[i];
+  if (i === 0) return { rank, progress: 1 }; // 最高ランク SSS は満タン
+  const lower = thresholds[i];
+  const upper = thresholds[i - 1];
+  return { rank, progress: Math.min((value - lower) / (upper - lower), 1) };
 }
 
-const RANK_COLOR = {
-  SSS: "#ffd700", SS: "#ffc83d", S: "#ffb300",
-  AAA: "#c4a7ff", AA: "#a988f7", A: "#9b7bf7",
-  B: "#6f8ff7", C: "#8b949e",
-};
-
-// 各メトリクスのアイコン（シンプルなベクターパス。絵文字は使わない）
-const ICONS = {
-  stars:
-    '<path d="M12 1.5l3.1 6.7 7.2.8-5.4 4.9 1.5 7.1L12 17.4 5.6 21l1.5-7.1L1.7 9l7.2-.8z"/>',
-  commits:
-    '<circle cx="12" cy="12" r="4.2" fill="none" stroke-width="2.6"/><line x1="0.5" y1="12" x2="7.8" y2="12" stroke-width="2.6"/><line x1="16.2" y1="12" x2="23.5" y2="12" stroke-width="2.6"/>',
-  followers:
-    '<circle cx="12" cy="7.5" r="4.5"/><path d="M3.5 21.5c0-4.7 3.8-8 8.5-8s8.5 3.3 8.5 8z"/>',
-  repos:
-    '<path d="M5 2.5h13a1.5 1.5 0 0 1 1.5 1.5v16a1.5 1.5 0 0 1-1.5 1.5H6.5A2.5 2.5 0 0 1 4 19V4a1.5 1.5 0 0 1 1-1.5z" fill="none" stroke-width="2.2"/><line x1="8.2" y1="2.5" x2="8.2" y2="21.5" stroke-width="2.2"/>',
-  prs:
-    '<circle cx="6.5" cy="5.5" r="3" fill="none" stroke-width="2.4"/><circle cx="6.5" cy="18.5" r="3" fill="none" stroke-width="2.4"/><circle cx="17.5" cy="18.5" r="3" fill="none" stroke-width="2.4"/><line x1="6.5" y1="8.5" x2="6.5" y2="15.5" stroke-width="2.4"/><path d="M11 5.5h4a2.5 2.5 0 0 1 2.5 2.5v7.5" fill="none" stroke-width="2.4"/>',
-  issues:
-    '<circle cx="12" cy="12" r="9.5" fill="none" stroke-width="2.6"/><circle cx="12" cy="12" r="3.2"/>',
-};
+// ランク→色（ゴールド=S系 / パープル=A系 / ブルー=B / グレー=C）。両テーマで可読。
+function tierColor(rank) {
+  if (rank.startsWith("S")) return "#e3b341"; // gold
+  if (rank.startsWith("A")) return "#a371f7"; // purple
+  if (rank === "B") return "#6f8ff7"; // blue (profile accent)
+  return "#8b949e"; // gray
+}
 
 const CARDS = [
-  { key: "stars", label: "Stars", value: stats.stars, thresholds: [100, 50, 25, 10, 5, 3, 2] },
-  { key: "commits", label: "Commits", value: stats.commits, thresholds: [2000, 1000, 500, 200, 100, 50, 20] },
-  { key: "followers", label: "Followers", value: stats.followers, thresholds: [100, 50, 25, 10, 5, 3, 2] },
-  { key: "repos", label: "Repositories", value: stats.repos, thresholds: [50, 30, 20, 12, 8, 5, 3] },
-  { key: "prs", label: "Pull Requests", value: stats.prs, thresholds: [200, 100, 50, 25, 12, 6, 3] },
-  { key: "issues", label: "Issues", value: stats.issues, thresholds: [100, 50, 25, 12, 8, 4, 2] },
+  { label: "Stars", value: stats.stars, thresholds: [100, 50, 25, 10, 5, 3, 2] },
+  { label: "Commits", value: stats.commits, thresholds: [2000, 1000, 500, 200, 100, 50, 20] },
+  { label: "Followers", value: stats.followers, thresholds: [100, 50, 25, 10, 5, 3, 2] },
+  { label: "Repositories", value: stats.repos, thresholds: [50, 30, 20, 12, 8, 5, 3] },
+  { label: "PullRequest", value: stats.prs, thresholds: [200, 100, 50, 25, 12, 6, 3] },
+  { label: "Issues", value: stats.issues, thresholds: [100, 50, 25, 12, 8, 4, 2] },
 ];
 
-const CARD_W = 118;
-const CARD_H = 130;
+const THEME = {
+  light: { cardFill: "#fffefe", cardBorder: "#e4e2e2", title: "#434d58", ringBg: "#dfe2e5", score: "#6f8ff7", shadow: 0.16 },
+  dark: { cardFill: "#1a1b27", cardBorder: "#2a2c3d", title: "#a9b1d6", ringBg: "#3b3e52", score: "#6f8ff7", shadow: 0.4 },
+};
+
+const CARD_W = 120;
+const CARD_H = 132;
 const GAP = 10;
-const width = CARDS.length * CARD_W + (CARDS.length - 1) * GAP;
+const R = 26; // リング半径
+const CX = CARD_W / 2;
+const CY = 70; // リング中心 y
+const CIRC = 2 * Math.PI * R;
 
-let body = "";
-CARDS.forEach((c, i) => {
-  const x = i * (CARD_W + GAP);
-  const r = rank(c.value, c.thresholds);
-  const color = RANK_COLOR[r];
-  body += `
+function buildSVG(themeName) {
+  const t = THEME[themeName];
+  const width = CARDS.length * CARD_W + (CARDS.length - 1) * GAP;
+  let body = "";
+  CARDS.forEach((c, idx) => {
+    const x = idx * (CARD_W + GAP);
+    const { rank, progress } = evaluate(c.value, c.thresholds);
+    const color = tierColor(rank);
+    const dash = (CIRC * progress).toFixed(2);
+    const rankFont = rank.length >= 3 ? 18 : rank.length === 2 ? 22 : 27;
+    body += `
   <g transform="translate(${x},0)">
-    <rect x="1" y="1" width="${CARD_W - 2}" height="${CARD_H - 2}" rx="10"
-          fill="none" stroke="#8b949e" stroke-opacity="0.35" stroke-width="1.5"/>
-    <g transform="translate(${CARD_W / 2 - 12},14)" fill="${color}" stroke="${color}">
-      ${ICONS[c.key]}
-    </g>
-    <text x="${CARD_W / 2}" y="68" text-anchor="middle"
+    <rect x="1.5" y="1.5" width="${CARD_W - 3}" height="${CARD_H - 3}" rx="8"
+          fill="${t.cardFill}" stroke="${t.cardBorder}" stroke-width="1.2" filter="url(#sh)"/>
+    <text x="${CX}" y="26" text-anchor="middle"
           font-family="Segoe UI, Helvetica, Arial, sans-serif"
-          font-size="26" font-weight="800" fill="${color}">${r}</text>
-    <text x="${CARD_W / 2}" y="92" text-anchor="middle"
+          font-size="13.5" font-weight="700" fill="${t.title}">${c.label}</text>
+    <circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${t.ringBg}" stroke-width="6"/>
+    <circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${color}" stroke-width="6"
+            stroke-linecap="round" stroke-dasharray="${dash} ${CIRC.toFixed(2)}"
+            transform="rotate(-90 ${CX} ${CY})"/>
+    <text x="${CX}" y="${CY}" text-anchor="middle" dominant-baseline="central"
           font-family="Segoe UI, Helvetica, Arial, sans-serif"
-          font-size="12.5" font-weight="600" fill="#8b949e">${c.label}</text>
-    <text x="${CARD_W / 2}" y="113" text-anchor="middle"
+          font-size="${rankFont}" font-weight="800" fill="${color}">${rank}</text>
+    <text x="${CX}" y="119" text-anchor="middle"
           font-family="Segoe UI, Helvetica, Arial, sans-serif"
-          font-size="14" font-weight="700" fill="#6f8ff7">${c.value.toLocaleString("en-US")}</text>
+          font-size="14" font-weight="700" fill="${t.score}">${c.value.toLocaleString("en-US")}</text>
   </g>`;
-});
-
-const svg = `<svg width="${width}" height="${CARD_H}" viewBox="0 0 ${width} ${CARD_H}"
-  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${LOGIN}'s trophies">${body}
+  });
+  return `<svg width="${width}" height="${CARD_H}" viewBox="0 0 ${width} ${CARD_H}"
+  xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${LOGIN}'s trophies">
+  <defs>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2" flood-color="#000000" flood-opacity="${t.shadow}"/>
+    </filter>
+  </defs>${body}
 </svg>
 `;
+}
 
 mkdirSync("assets", { recursive: true });
-writeFileSync("assets/trophies.svg", svg);
-console.log("generated assets/trophies.svg:", JSON.stringify(stats));
+writeFileSync("assets/trophies-light.svg", buildSVG("light"));
+writeFileSync("assets/trophies-dark.svg", buildSVG("dark"));
+console.log("generated trophies-light.svg / trophies-dark.svg:", JSON.stringify(stats));

@@ -25,6 +25,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/trophies.svg
-          git diff --cached --quiet || git commit -m "Update trophies.svg - [Skip GitHub Action]"
+          git rm -q --ignore-unmatch assets/trophies.svg
+          git add assets/trophies-light.svg assets/trophies-dark.svg
+          git diff --cached --quiet || git commit -m "Update trophies - [Skip GitHub Action]"
           git push
