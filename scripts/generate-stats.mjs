@@ -149,10 +149,12 @@ function buildLangsSVG() {
       totals.set(k, cur);
     }
   }
-  let langs = [...totals.entries()].map(([name, v]) => ({ name, size: v.size, color: v.color }))
-    .sort((a, b) => b.size - a.size).slice(0, 6);
-  const grand = langs.reduce((s, l) => s + l.size, 0) || 1;
-  langs = langs.map((l) => ({ ...l, pct: (l.size / grand) * 100 }));
+  const all = [...totals.entries()].map(([name, v]) => ({ name, size: v.size, color: v.color }))
+    .sort((a, b) => b.size - a.size);
+  const grand = all.reduce((s, l) => s + l.size, 0) || 1;
+  // パーセンテージは全言語に対する比率で算出し、極小（0.5%未満）は除外して上位6件を表示
+  let langs = all.map((l) => ({ ...l, pct: (l.size / grand) * 100 }))
+    .filter((l) => l.pct >= 0.5).slice(0, 6);
 
   const W = 330, H = 195;
   let body = `
