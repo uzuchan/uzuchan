@@ -2,7 +2,7 @@
   font-family="Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-label="uzuchan's most used languages">
   <text x="25" y="34" font-size="18" font-weight="700" fill="#6f8ff7">Most Used Languages</text>
   <clipPath id="bar"><rect x="25" y="52" width="280" height="10" rx="5"/></clipPath>
-  <g clip-path="url(#bar)"><rect x="25.00" y="52" width="130.24" height="10" fill="#e34c26"/><rect x="155.24" y="52" width="96.91" height="10" fill="#f1e05a"/><rect x="252.15" y="52" width="29.21" height="10" fill="#663399"/><rect x="281.36" y="52" width="23.37" height="10" fill="#3178c6"/><rect x="304.72" y="52" width="0.18" height="10" fill="#384d54"/><rect x="304.91" y="52" width="0.09" height="10" fill="#89e051"/><rect x="25" y="52" width="280" height="10" fill="none"/></g>
+  <g clip-path="url(#bar)"><rect x="25.00" y="52" width="130.22" height="10" fill="#e34c26"/><rect x="155.22" y="52" width="96.93" height="10" fill="#f1e05a"/><rect x="252.15" y="52" width="29.21" height="10" fill="#663399"/><rect x="281.36" y="52" width="23.36" height="10" fill="#3178c6"/><rect x="25" y="52" width="280" height="10" fill="none"/></g>
   <circle cx="30" cy="88" r="5.5" fill="#e34c26"/>
   <text x="43" y="92" font-size="13" fill="#8b949e">HTML <tspan font-weight="700" fill="#6f8ff7">46.5%</tspan></text>
   <circle cx="30" cy="114" r="5.5" fill="#f1e05a"/>
@@ -11,8 +11,4 @@
   <text x="43" y="144" font-size="13" fill="#8b949e">CSS <tspan font-weight="700" fill="#6f8ff7">10.4%</tspan></text>
   <circle cx="180" cy="88" r="5.5" fill="#3178c6"/>
   <text x="193" y="92" font-size="13" fill="#8b949e">TypeScript <tspan font-weight="700" fill="#6f8ff7">8.3%</tspan></text>
-  <circle cx="180" cy="114" r="5.5" fill="#384d54"/>
-  <text x="193" y="118" font-size="13" fill="#8b949e">Dockerfile <tspan font-weight="700" fill="#6f8ff7">0.1%</tspan></text>
-  <circle cx="180" cy="140" r="5.5" fill="#89e051"/>
-  <text x="193" y="144" font-size="13" fill="#8b949e">Shell <tspan font-weight="700" fill="#6f8ff7">0.0%</tspan></text>
 </svg>
