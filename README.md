@@ -248,7 +248,24 @@ focus:       research × making
 <br>
 
 <!-- ============================================================= -->
-<!-- 5. More Stats（<details> 折りたたみ）                          -->
+<!-- 5. Contribution City（github-profile-3d-contrib night-view・毎日自動更新）-->
+<!--   コミット履歴から街が育つ。クリックで honzaap の操作できる3D版が開く  -->
+<!-- ============================================================= -->
+
+## Contribution City
+
+<div align="center">
+
+[![uzuchan's contribution city](https://raw.githubusercontent.com/uzuchan/uzuchan/main/profile-3d-contrib/profile-night-view.svg)](https://honzaap.github.io/GithubCity/?name=uzuchan&year=2026)
+
+<sub>コミット履歴から街が育ちます。クリックすると <a href="https://honzaap.github.io/GithubCity/?name=uzuchan&year=2026">操作できる3Dシティ（GithubCity）</a> が開きます。<br>3D SVG: <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a> ／ interactive city: <a href="https://github.com/honzaap/GithubCity">honzaap/GithubCity</a></sub>
+
+</div>
+
+<br>
+
+<!-- ============================================================= -->
+<!-- 6. More Stats（<details> 折りたたみ）                          -->
 <!--   Activity Graph → Snake → Metrics の順                        -->
 <!--   ※ snake / metrics は自動更新URLをそのまま維持               -->
 <!-- ============================================================= -->
