@@ -37,5 +37,12 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -q --ignore-unmatch assets/trophies.svg
           git add assets/trophies-light.svg assets/trophies-dark.svg assets/streak.svg assets/stats.svg assets/top-langs.svg
-          git diff --cached --quiet || git commit -m "Update stats - [Skip GitHub Action]"
-          git push
+          if ! git diff --cached --quiet; then
+            V=$(date +%s)
+            for f in streak stats top-langs trophies-light trophies-dark; do
+              perl -pi -e "s{(assets/$f\.svg)(\?v=\d+)?}{\$1?v=$V}g" README.md
+            done
+            git add README.md
+            git commit -m "Update stats - [Skip GitHub Action]"
+            git push
+          fi
