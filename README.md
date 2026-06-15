@@ -237,7 +237,7 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-editors-dark.svg">
   <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-editors-light.svg"
-       alt="Editors: VS Code, IntelliJ IDEA, Eclipse, Vim">
+       alt="Editors: VS Code, Eclipse, Vim">
 </picture>
 
 <!-- skillicons に無いエディタ/IDEは shields.io バッジで補完 -->
