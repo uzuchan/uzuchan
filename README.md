@@ -155,6 +155,32 @@ focus:       research × making
 <br>
 
 <!-- ============================================================= -->
+<!-- Open Source（自作テンプレートの宣伝）                          -->
+<!-- ============================================================= -->
+
+## Open Source
+
+<div align="center">
+
+<a href="https://github.com/uzuchan/github-profile-starter">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&theme=tokyonight">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&theme=default">
+  <img alt="github-profile-starter" src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true">
+</picture>
+</a>
+
+**github-profile-starter** — このプロフィールを誰でも作れるテンプレートとして公開しています。トロフィー・統計・連続記録・使用言語・スネーク・メトリクス・3Dの街を実データから自動更新（PAT不要・英日解説つき）。<br>
+A reusable starter kit for this profile — auto-updating stats, trophies, languages, and a 3D contribution city.
+
+[![Use this template](https://img.shields.io/badge/Use_this_template-2ea44f?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uzuchan/github-profile-starter/generate)
+[![Repository](https://img.shields.io/badge/Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/uzuchan/github-profile-starter)
+
+</div>
+
+<br>
+
+<!-- ============================================================= -->
 <!-- 3. スキルアイコン（skillicons.dev / カテゴリ別・<picture>両対応） -->
 <!-- ============================================================= -->
 
