@@ -194,7 +194,7 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-languages-dark.svg">
   <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-languages-light.svg"
-       alt="Languages: JavaScript, TypeScript, HTML, CSS, Swift">
+       alt="Languages: C, C++, C#, Java, Kotlin, PHP, Python, JavaScript, TypeScript, Swift, HTML, CSS">
 </picture>
 
 <!-- ─── Frameworks & Libraries ────────────────────────── -->
@@ -203,7 +203,7 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-frameworks-dark.svg">
   <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-frameworks-light.svg"
-       alt="Frameworks: React, Three.js, Vite, Node.js">
+       alt="Frameworks: React, Vue, Node.js, Flask, jQuery, Three.js, Electron, OpenCV, PyTorch">
 </picture>
 
 <!-- skillicons に無い: Zustand / Recharts / Dexie / Web Audio API / Canvas 2D -->
@@ -214,39 +214,51 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 <img src="https://img.shields.io/badge/Web_Audio_API-4285F4?style=flat-square&logo=googlechrome&logoColor=white" alt="Web Audio API">
 <img src="https://img.shields.io/badge/Canvas_2D_API-E34F26?style=flat-square&logo=html5&logoColor=white" alt="Canvas 2D API">
 
-<!-- ─── Tools & Infra ──────────────────────────────────── -->
-<h4>Tools &amp; Infra</h4>
+<!-- ─── Tools & Infrastructure ─────────────────────────── -->
+<h4>Tools &amp; Infrastructure</h4>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-tools-dark.svg">
   <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-tools-light.svg"
-       alt="Tools: Git, GitHub, GitHub Actions, Docker, Figma">
+       alt="Tools: Git, GitHub, Docker, AWS, Firebase, Nginx, MySQL, npm, Bash, PowerShell, Linux, Ubuntu, Apple">
 </picture>
 
 <!-- skillicons に無いツールは shields.io バッジで補完 -->
 <br>
+<img src="https://img.shields.io/badge/Warp-01A4FF?style=flat-square&logo=warp&logoColor=white" alt="Warp">
+<img src="https://img.shields.io/badge/UTM-4A7EBF?style=flat-square" alt="UTM">
 <img src="https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=eslint&logoColor=white" alt="ESLint">
 <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
 <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white" alt="Claude Code">
 
-<!-- ─── Apps & Workspace ──────────────────────────────── -->
-<h4>Apps &amp; Workspace</h4>
+<!-- ─── Editors & IDEs ─────────────────────────────────── -->
+<h4>Editors &amp; IDEs</h4>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-apps-dark.svg">
-  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-apps-light.svg"
-       alt="Apps: Obsidian, Notion, Eclipse">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-editors-dark.svg">
+  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-editors-light.svg"
+       alt="Editors: VS Code, IntelliJ IDEA, Eclipse, Vim">
+</picture>
+
+<!-- skillicons に無いエディタ/IDEは shields.io バッジで補完 -->
+<br>
+<img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor">
+<img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=xcode&logoColor=white" alt="Xcode">
+<img src="https://img.shields.io/badge/Swift_Playgrounds-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift Playgrounds">
+
+<!-- ─── Design, Docs & Apps ────────────────────────────── -->
+<h4>Design, Docs &amp; Apps</h4>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-design-dark.svg">
+  <img src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/skills-design-light.svg"
+       alt="Design/Docs/Apps: Figma, Illustrator, Photoshop, Blender, LaTeX, Markdown, SVG, Obsidian, Notion, WordPress">
 </picture>
 
 <!-- skillicons に無いアプリは shields.io バッジで補完 -->
 <br>
-<img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white" alt="Cursor">
-<img src="https://img.shields.io/badge/Warp-01A4FF?style=flat-square&logo=warp&logoColor=white" alt="Warp">
 <img src="https://img.shields.io/badge/Zotero-CC2936?style=flat-square&logo=zotero&logoColor=white" alt="Zotero">
-<img src="https://img.shields.io/badge/Xcode-147EFB?style=flat-square&logo=xcode&logoColor=white" alt="Xcode">
-<img src="https://img.shields.io/badge/Swift_Playgrounds-F05138?style=flat-square&logo=swift&logoColor=white" alt="Swift Playgrounds">
 <img src="https://img.shields.io/badge/Fitbit_OS_Simulator-00B0B9?style=flat-square&logo=fitbit&logoColor=white" alt="Fitbit OS Simulator">
-<img src="https://img.shields.io/badge/UTM-4A7EBF?style=flat-square" alt="UTM">
 
 </div>
 
