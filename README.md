@@ -84,6 +84,7 @@ focus:       research × making
 <tr>
 <td width="50%" valign="top" align="center">
 
+<a href="https://github.com/uzuchan/hikari">
 <picture>
   <source media="(prefers-color-scheme: dark)"
     srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&theme=tokyonight">
@@ -92,6 +93,7 @@ focus:       research × making
   <img alt="hikari repo card"
     src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true">
 </picture>
+</a>
 
 **hikari** — 光・音・自然をテーマにした 27 作品のインタラクティブ試作集。Playwright で実ブラウザ検証。
 
@@ -104,6 +106,7 @@ focus:       research × making
 </td>
 <td width="50%" valign="top" align="center">
 
+<a href="https://github.com/uzuchan/Sparta-Typing">
 <picture>
   <source media="(prefers-color-scheme: dark)"
     srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&theme=tokyonight">
@@ -112,6 +115,7 @@ focus:       research × making
   <img alt="Sparta-Typing repo card"
     src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true">
 </picture>
+</a>
 
 **Sparta-Typing** — 間隔反復法 × ローマ字判定で語彙定着を狙う英単語タイピング学習 SPA。
 
@@ -127,6 +131,7 @@ focus:       research × making
 <tr>
 <td colspan="2" valign="top" align="center">
 
+<a href="https://github.com/uzuchan/NEXUS">
 <picture>
   <source media="(prefers-color-scheme: dark)"
     srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&theme=tokyonight">
@@ -135,6 +140,7 @@ focus:       research × making
   <img alt="NEXUS repo card"
     src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true">
 </picture>
+</a>
 
 **NEXUS** — SF 世界観の没入型 Web 体験。GPU パーティクル × シネマティック演出。
 
