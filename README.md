@@ -38,11 +38,11 @@
 
 <!-- ============ タイピングアニメーション（readme-typing-svg） ============ -->
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=6F8FF7&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+uzuchan;Student+Developer+from+Japan;NLP+Researcher+%C3%97+Web+Developer;research+%C3%97+making;Building+with+React%2C+TypeScript+%26+Three.js;Open+to+work+%26+internships)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&pause=1000&color=f06595&center=true&vCenter=true&width=600&lines=Hello%2C+I'm+uzuchan;Student+Developer+from+Japan;NLP+Researcher+%C3%97+Web+Developer;research+%C3%97+making;Building+with+React%2C+TypeScript+%26+Three.js;Open+to+work+%26+internships)](https://git.io/typing-svg)
 
 <!-- ============ プロフィール閲覧カウンタ（komarev ghpvc） ============ -->
 
-![Profile Views](https://komarev.com/ghpvc/?username=uzuchan&label=Profile%20Views&color=6f8ff7&style=flat)
+![Profile Views](https://komarev.com/ghpvc/?username=uzuchan&label=Profile%20Views&color=f06595&style=flat)
 
 </div>
 
@@ -87,17 +87,17 @@ focus:       research × making
 <a href="https://github.com/uzuchan/hikari">
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&theme=tokyonight">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&title_color=f06595&icon_color=f06595&theme=tokyonight">
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&theme=default">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&title_color=f06595&icon_color=f06595&theme=default">
   <img alt="hikari repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true">
+    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=hikari&hide_border=true&title_color=f06595&icon_color=f06595">
 </picture>
 </a>
 
 **hikari** — 光・音・自然をテーマにした 27 作品のインタラクティブ試作集。Playwright で実ブラウザ検証。
 
-[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/hikari/)
+[![Demo](https://img.shields.io/badge/Demo-Live-f06595?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/hikari/)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)](https://threejs.org)
 ![Canvas 2D](https://img.shields.io/badge/Canvas_2D-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![Web Audio](https://img.shields.io/badge/Web_Audio_API-FF9900?style=flat-square&logo=javascript&logoColor=white)
@@ -109,17 +109,17 @@ focus:       research × making
 <a href="https://github.com/uzuchan/Sparta-Typing">
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&theme=tokyonight">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&title_color=f06595&icon_color=f06595&theme=tokyonight">
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&theme=default">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&title_color=f06595&icon_color=f06595&theme=default">
   <img alt="Sparta-Typing repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true">
+    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=Sparta-Typing&hide_border=true&title_color=f06595&icon_color=f06595">
 </picture>
 </a>
 
 **Sparta-Typing** — 間隔反復法 × ローマ字判定で語彙定着を狙う英単語タイピング学習 SPA。
 
-[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/Sparta-Typing/)
+[![Demo](https://img.shields.io/badge/Demo-Live-f06595?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/Sparta-Typing/)
 [![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
@@ -134,17 +134,17 @@ focus:       research × making
 <a href="https://github.com/uzuchan/NEXUS">
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&theme=tokyonight">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&title_color=f06595&icon_color=f06595&theme=tokyonight">
   <source media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&theme=default">
+    srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&title_color=f06595&icon_color=f06595&theme=default">
   <img alt="NEXUS repo card"
-    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true">
+    src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=NEXUS&hide_border=true&title_color=f06595&icon_color=f06595">
 </picture>
 </a>
 
 **NEXUS** — SF 世界観の没入型 Web 体験。GPU パーティクル × シネマティック演出。
 
-[![Demo](https://img.shields.io/badge/Demo-Live-6f8ff7?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/NEXUS/)
+[![Demo](https://img.shields.io/badge/Demo-Live-f06595?style=flat-square&logo=googlechrome&logoColor=white)](https://uzuchan.github.io/NEXUS/)
 [![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)](https://threejs.org)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
 ![GLSL](https://img.shields.io/badge/GLSL-5586A4?style=flat-square)
@@ -170,9 +170,9 @@ focus:       research × making
 
 <a href="https://github.com/uzuchan/github-profile-starter">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&theme=tokyonight">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&theme=default">
-  <img alt="github-profile-starter" src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&title_color=f06595&icon_color=f06595&theme=tokyonight">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&title_color=f06595&icon_color=f06595&theme=default">
+  <img alt="github-profile-starter" src="https://github-readme-stats.vercel.app/api/pin/?username=uzuchan&repo=github-profile-starter&hide_border=true&title_color=f06595&icon_color=f06595">
 </picture>
 </a>
 
@@ -326,8 +326,8 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=uzuchan&bg_color=1a1b27&color=6f8ff7&line=6f8ff7&point=ffffff&area=true&hide_border=true">
-  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=uzuchan&bg_color=ffffff&color=6f8ff7&line=6f8ff7&point=1a1b27&area=true&hide_border=true">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=uzuchan&bg_color=1a1b27&color=f06595&line=f06595&point=ffffff&area=true&hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=uzuchan&bg_color=ffffff&color=f06595&line=f06595&point=1a1b27&area=true&hide_border=true">
   <img alt="uzuchan's activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=uzuchan&area=true&hide_border=true">
 </picture>
 

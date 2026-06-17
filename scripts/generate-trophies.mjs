@@ -77,7 +77,7 @@ function evaluate(value, thresholds) {
 function tierColor(rank) {
   if (rank.startsWith("S")) return "#e3b341"; // gold
   if (rank.startsWith("A")) return "#a371f7"; // purple
-  if (rank === "B") return "#6f8ff7"; // blue (profile accent)
+  if (rank === "B") return "#f06595"; // blue (profile accent)
   return "#8b949e"; // gray
 }
 
@@ -91,8 +91,8 @@ const CARDS = [
 ];
 
 const THEME = {
-  light: { cardFill: "#fffefe", cardBorder: "#e4e2e2", title: "#434d58", ringBg: "#dfe2e5", score: "#6f8ff7", shadow: 0.16 },
-  dark: { cardFill: "#1a1b27", cardBorder: "#2a2c3d", title: "#a9b1d6", ringBg: "#3b3e52", score: "#6f8ff7", shadow: 0.4 },
+  light: { cardFill: "#fffefe", cardBorder: "#e4e2e2", title: "#434d58", ringBg: "#dfe2e5", score: "#f06595", shadow: 0.16 },
+  dark: { cardFill: "#1a1b27", cardBorder: "#2a2c3d", title: "#a9b1d6", ringBg: "#3b3e52", score: "#f06595", shadow: 0.4 },
 };
 
 const CARD_W = 120;

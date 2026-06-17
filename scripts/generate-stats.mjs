@@ -88,7 +88,7 @@ function calculateRank({ commits, prs, issues, reviews, stars, followers }) {
 const rank = calculateRank(stats);
 
 // 配色（背景透過・両テーマで可読）
-const ACCENT = "#6f8ff7";
+const ACCENT = "#f06595";
 const LABEL = "#8b949e";
 const RINGBG = "#8b949e";
 
