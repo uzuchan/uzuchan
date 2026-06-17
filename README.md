@@ -302,6 +302,9 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 
 [![uzuchan's contribution city](https://raw.githubusercontent.com/uzuchan/uzuchan/main/profile-3d-contrib/profile-night-view.svg)](https://honzaap.github.io/GithubCity/?name=uzuchan&year=2026)
 
+**2026年から本格的にスタート。ここから毎日積み上げています。**<br>
+Started on GitHub in 2026 — and building every day.
+
 <sub>コミット履歴から街が育ちます。クリックすると <a href="https://honzaap.github.io/GithubCity/?name=uzuchan&year=2026">操作できる3Dシティ（GithubCity）</a> が開きます。<br>3D SVG: <a href="https://github.com/yoshi389111/github-profile-3d-contrib">github-profile-3d-contrib</a> ／ interactive city: <a href="https://github.com/honzaap/GithubCity">honzaap/GithubCity</a></sub>
 
 </div>
