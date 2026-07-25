@@ -31,9 +31,9 @@
 <!-- ============ トロフィー（自前生成・assets/trophies-*.svg・毎日自動更新） ============ -->
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies-dark.svg?v=1782131293">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies-light.svg?v=1782131293">
-  <img alt="uzuchan's trophies" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies-light.svg?v=1782131293">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies-dark.svg?v=1784967943">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies-light.svg?v=1784967943">
+  <img alt="uzuchan's trophies" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/trophies-light.svg?v=1784967943">
 </picture>
 
 <!-- ============ タイピングアニメーション（readme-typing-svg） ============ -->
@@ -279,13 +279,13 @@ A reusable starter kit for this profile — auto-updating stats, trophies, langu
 
 <div align="center">
 
-<img height="165" alt="uzuchan's GitHub stats" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/stats.svg?v=1782131293">
+<img height="165" alt="uzuchan's GitHub stats" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/stats.svg?v=1784967943">
 &nbsp;
-<img height="165" alt="uzuchan's top languages" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/top-langs.svg?v=1782131293">
+<img height="165" alt="uzuchan's top languages" src="https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/top-langs.svg?v=1784967943">
 
-<!-- ============ ストリーク（自前生成・assets/streak.svg?v=1782131293・自動更新） ============ -->
+<!-- ============ ストリーク（自前生成・assets/streak.svg?v=1784967943・自動更新） ============ -->
 
-![uzuchan's streak](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/streak.svg?v=1782131293)
+![uzuchan's streak](https://raw.githubusercontent.com/uzuchan/uzuchan/main/assets/streak.svg?v=1784967943)
 
 </div>
 
